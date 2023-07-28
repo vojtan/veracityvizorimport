@@ -1,0 +1,42 @@
+{
+    "InputFileName":"C:\\Users\\vojte\\Downloads\\faktury.csv",
+    "OutputFileName":"C:\\Users\\vojte\\Downloads\\output.csv",
+    "Columns":[
+       {
+          "Source":"Částka celkem",
+          "Destination":"amount",
+          "Type":"decimal"
+       },
+       {
+          "Source":"POL",
+          "Destination":"item",
+          "Type":"default"
+       },
+       {
+          "Source":"OD,PA",
+          "Destination":"paragraph",
+          "Type":"merge"
+       },
+       {
+          "Source":"IČO/D.nar.",
+          "Destination":"counterpartyId",
+          "Type":"ico"
+       },
+       {
+          "Source":"Dodavatel",
+          "Destination":"counterpartyName",
+          "Type":"default"
+       },
+       {
+          "Source":"Text dokladu",
+          "Destination":"description",
+          "Type":"default"
+       },
+       {
+          "Source":"Dat.uhrady",
+          "Destination":"date",
+          "Type":"date"
+       }
+    ],
+    "DocumentType":"KDF"
+ }
